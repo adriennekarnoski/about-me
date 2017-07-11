@@ -1,11 +1,12 @@
 * {
-  font-family: Georgia;
+  font-family: Verdana;
 }
 
 .container {
   width: 960px;
   margin: auto;
   background: #f2f2f2;
+  height: 100%;
 }
 
 header {
@@ -13,30 +14,47 @@ header {
 }
 
 header > h1 {
-  padding-top: 50px;
+  padding: 20px 40px;
+  font-size: 350%;
+  display: inline-block;
+  margin-bottom: 0;
+  color: white;
+  background: linear-gradient(#ff0066, #ff6600);
+}
+
+header h1, header h2 {
   text-transform: uppercase;
 }
 
-header > h2 {
-  line-height: 50%;
-}
-
 main {
-  width: 720px;
+  width: 75%;
   margin: auto;
 }
 
-.float-container {
+article {
+  marin: 25px 20px;
+  width: 680px;
+  display: inline-block;
+}
+
+article > .float-container {
   content: " ";
+  display: inline-block;
   clear: both;
-  display: box;
 }
 
 section {
   float: left;
-  width: 50%;
+  width: 47%;
+  display: block;
+  padding-left: 15px;
+}
+
+section > h3 {
+  text-align: center;
 }
 
 .question-span {
   font-weight: bold;
+  color: #ff0066;
 }
