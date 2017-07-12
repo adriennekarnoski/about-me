@@ -28,16 +28,16 @@ console.log('Did the user believe in my ability to eat 20 chicken nuggets? ' + c
 
 var moviegenre = prompt('Is Romance my favorite movie genre?').toLowerCase();
 if (moviegenre === 'yes' || moviegenre === 'y') {
-  alert('Nope, take \'The Notebook\' somewhere else');
+  alert('Nope, take \'The Notebook\' somewhere else.');
 } else {
   alert('Correct!');
 };
 console.log('Did the user think my favorite movie genre was Romance? ' + moviegenre);
 
-var lastanswer = prompt('Is the answer to this question no?').toLowerCase();
-if (lastanswer === 'yes' || lastanswer === 'y') {
-  alert('Correct!');
+var dog = prompt('Do I love my dog?').toLowerCase();
+if (dog === 'yes' || dog === 'y') {
+  alert('Of course I love my dog');
 } else {
-  alert('Nope!');
+  alert('Wrong, you monster.');
 };
-console.log('Did the use answer the last question yes? ' + lastanswer);
+console.log('Did the use answer the last question yes? ' + dog);

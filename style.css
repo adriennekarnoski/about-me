@@ -5,36 +5,39 @@
 .container {
   width: 960px;
   margin: auto;
-  background: #f2f2f2;
+  background: #f5f2f0;
   height: 100%;
 }
 
 header {
   text-align: center;
+  background: linear-gradient(#565656, #333333);
 }
 
 header > h1 {
   padding: 20px 40px;
   font-size: 350%;
   display: inline-block;
-  margin-bottom: 0;
   color: white;
-  background: linear-gradient(#ff0066, #ff6600);
+  border: #d6cac2 solid 3px;
 }
 
-header h1, header h2 {
+h1, h2 {
   text-transform: uppercase;
+  color: #8a424e;
 }
 
 main {
   width: 75%;
   margin: auto;
+  font-size: 14px;
 }
 
 article {
-  marin: 25px 20px;
+  margin: 10px 20px;
   width: 680px;
   display: inline-block;
+  padding: 10px;
 }
 
 article > .float-container {
@@ -45,16 +48,19 @@ article > .float-container {
 
 section {
   float: left;
-  width: 47%;
+  width: 280px;
   display: block;
-  padding-left: 15px;
+  margin: 25px 0px 25px 25px;
+    padding: 10px;
+    border: white solid 3px;
+    height: 160px;
 }
 
-section > h3 {
+section > h2 {
   text-align: center;
 }
 
 .question-span {
   font-weight: bold;
-  color: #ff0066;
+  color: #e0ab38;
 }
