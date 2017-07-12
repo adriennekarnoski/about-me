@@ -41,3 +41,5 @@ if (dog === 'yes' || dog === 'y') {
   alert('Wrong, you monster.');
 };
 console.log('Did the use answer the last question yes? ' + dog);
+
+alert('I hope you enjoyed this quiz! Feel free to explore more about me and see extended responses to my answers!');
