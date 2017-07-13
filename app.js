@@ -42,18 +42,18 @@ userGuess = parseInt(prompt('Guess a number between 10 - 20'));
   if (guessesLeft === 0) {
     alert('Sorry, you\'re all out of guesses!');
   };
-}
-
+  console.log('The user guessed ' + userGuess);
+};
 
 //a question with multiple correct answers stored in an array
-
+//user gets 6 tries
 guessesLeft = 6;
 while (guessesLeft > 0) {
-  console.log(guessesLeft);
   userGuess = prompt('Guess a color I have dyed my hair?').toLowerCase();
   var fruit = ['black', 'pink', 'green', 'blue', 'purple', 'red'];
     if (fruit.includes(userGuess)){
     guessesLeft = guessesLeft - 6;
+    answersCorrect++;
     alert('Correct!');
       } else {
       guessesLeft--;
@@ -62,9 +62,8 @@ while (guessesLeft > 0) {
     if (guessesLeft === 0) {
     alert('The colors I have dyed my hair so far are black, pink, green, blue, purple, and red!');
     };
-  }
+    console.log('The user guessed ' + userGuess);
+  };
 
-
-
-
-console.log('The user has gotten ' + answersCorrect + ' answers correct');
+//final alert letting the user know their score
+alert('You\'re all done with the quiz, ' + userName + '! \n I hope you had as much fun answering it as I had making it! \n You got a total of ' + answersCorrect + ' out of 7 right!');
