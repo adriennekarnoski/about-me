@@ -2,12 +2,13 @@
 
 var userName = prompt('Welcome to my "About Me" page! \n What is your name?');
 alert('Nice to meet you, ' + userName + '! \n Let\'s see how well you know me! \n Please enter \"Yes\" or \"No\" in the response box!');
-
+var answersCorrect = 0;
+function aboutMeQuestions() {
 // 5 questions about me with yes or no answers
-var myQuestions = ['Am I the oldest child?', 'Do I have all ten fingerprints?', 'Can I eat a McDonald\'s 20 piece McNugget in one sitting?', 'Did the user think my favorite movie genre was Romance?', 'Do I love my dog?'];
+var myQuestions = ['Am I the oldest child?', 'Do I have all ten fingerprints?', 'Can I eat a McDonald\'s 20 piece McNugget in one sitting?', 'Is my favorite movie genre Romance?', 'Do I love my dog?'];
 var myWordAnswers = ['no', 'no', 'yes', 'no', 'yes'];
 var myLetterAnswers = ['n', 'n', 'y', 'n', 'y'];
-var answersCorrect = 0;
+
 
 for (var i = 0; i < myQuestions.length; i++) {
   var userResponse = prompt(myQuestions[i].toLowerCase());
@@ -19,7 +20,10 @@ for (var i = 0; i < myQuestions.length; i++) {
     }
     console.log('The user gave the answer ' + userResponse[i] + ' to the question ' + myQuestions[i]);
 };
+};
+aboutMeQuestions();
 
+function guessingGame() {
 //a number guessing game where the user has 4 tries
 var myNumber = 13;
 var guessesLeft = 4;
@@ -44,26 +48,33 @@ userGuess = parseInt(prompt('Guess a number between 10 - 20'));
   };
   console.log('The user guessed ' + userGuess);
 };
-
+};
+guessingGame();
 //a question with multiple correct answers stored in an array
 //user gets 6 tries
-guessesLeft = 6;
-while (guessesLeft > 0) {
-  userGuess = prompt('Guess a color I have dyed my hair?').toLowerCase();
+console.log('Hey is this thing on?!');
+
+function hairColor() {
+  console.log('sure is!');
+var newGuessesLeft = 6;
+var newUserGuess;
+while (newGuessesLeft > 0) {
+  newUserGuess = prompt('Guess a color I have dyed my hair?').toLowerCase();
   var fruit = ['black', 'pink', 'green', 'blue', 'purple', 'red'];
-    if (fruit.includes(userGuess)){
-    guessesLeft = guessesLeft - 6;
+    if (fruit.includes(newUserGuess)){
+    newGuessesLeft = -1;
     answersCorrect++;
     alert('Correct!');
       } else {
-      guessesLeft--;
+      newGuessesLeft--;
       alert('Wrong!');
     };
-    if (guessesLeft === 0) {
+    if (newGuessesLeft === 0) {
     alert('The colors I have dyed my hair so far are black, pink, green, blue, purple, and red!');
     };
-    console.log('The user guessed ' + userGuess);
+    console.log('The user guessed ' + newUserGuess);
   };
-
+};
+hairColor();
 //final alert letting the user know their score
 alert('You\'re all done with the quiz, ' + userName + '! \n I hope you had as much fun answering it as I had making it! \n You got a total of ' + answersCorrect + ' out of 7 right!');
