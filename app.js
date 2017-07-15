@@ -80,4 +80,7 @@ while (newGuessesLeft > 0) {
 hairColor();
 //final alert letting the user know their score
 alert('You\'re all done with the quiz, ' + userName + '! \n I hope you had as much fun answering it as I had making it! \n You got a total of ' + answersCorrect + ' out of 7 right!');;
+
+//make quiz section appear
+document.getElementById('quiz-answers').style.display = "inline-block";
 });
