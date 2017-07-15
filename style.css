@@ -1,17 +1,20 @@
 * {
+  font-family: 'Open Sans Condensed', sans-serif;
+
   font-family: Verdana;
 }
 
 .container {
   width: 960px;
   margin: auto;
-  background: #f5f2f0;
+
   height: 100%;
 }
 
 header {
   text-align: center;
-  background: linear-gradient(#565656, #333333);
+  background-image: url('notebook.jpg');
+  background-size: cover;
 }
 
 header > h1 {
@@ -23,44 +26,42 @@ header > h1 {
 }
 
 h1, h2 {
+  font-family: 'Amatic SC', cursive;
   text-transform: uppercase;
   color: #8a424e;
 }
 
 main {
-  width: 75%;
-  margin: auto;
+display: inline;
   font-size: 14px;
+  width: 630px;
+  float: left;
+
 }
 
 article {
-  margin: 10px 20px;
-  width: 680px;
+width: 500px;
+padding: 0px 70px;
   display: inline-block;
-  padding: 10px;
+
 }
 
-article > .float-container {
-  content: " ";
-  display: inline-block;
-  clear: both;
-}
-
-section {
-  float: left;
+aside {
   width: 280px;
-  display: block;
-  margin: 25px 0px 25px 25px;
-    padding: 10px;
+  padding: 0px 20px;
+  display: inline-block;
+background: #ffe6e6;
     border: white solid 3px;
-    height: 160px;
+float: left;
 }
 
-section > h2 {
+aside > h2 {
   text-align: center;
+  font-family: 'Amatic SC', cursive;
 }
 
 .question-span, .intro-span {
+  font-family: 'Amatic SC', cursive;
   font-weight: 700;
   font-size: 18px;
   color: #e0ab38;

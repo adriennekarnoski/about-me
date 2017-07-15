@@ -1,6 +1,8 @@
 "use strict";
 
-var userName = prompt('Welcome to my "About Me" page! \n What is your name?');
+document.getElementById('button').addEventListener('click', function() {
+
+  var userName = prompt('Welcome to my "About Me" page! \n What is your name?');
 alert('Nice to meet you, ' + userName + '! \n Let\'s see how well you know me! \n Please enter \"Yes\" or \"No\" in the response box!');
 var answersCorrect = 0;
 function aboutMeQuestions() {
@@ -77,4 +79,5 @@ while (newGuessesLeft > 0) {
 };
 hairColor();
 //final alert letting the user know their score
-alert('You\'re all done with the quiz, ' + userName + '! \n I hope you had as much fun answering it as I had making it! \n You got a total of ' + answersCorrect + ' out of 7 right!');
+alert('You\'re all done with the quiz, ' + userName + '! \n I hope you had as much fun answering it as I had making it! \n You got a total of ' + answersCorrect + ' out of 7 right!');;
+});
