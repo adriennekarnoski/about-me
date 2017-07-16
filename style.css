@@ -90,6 +90,11 @@ h3 {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
 .question-span, .intro-span {
   font-family: 'Amatic SC', cursive;
   font-weight: 700;
